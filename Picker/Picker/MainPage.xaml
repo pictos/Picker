@@ -10,9 +10,13 @@
                            IsRunning="{Binding IsBusy}"
                            IsVisible="{Binding IsBusy}"/>
         
-        <Picker ItemsSource="{Binding Itens}"/>
+        <Picker ItemsSource="{Binding Itens}"
+                SelectedItem="{Binding Item}"/>
         <Button Text="Carregar itens"
                 Command="{Binding CarregarCommand}"/>
+
+        <Button Text="Item Selecionado"
+                Command="{Binding SelecionarCommand}"/>
 
     </StackLayout>
 
